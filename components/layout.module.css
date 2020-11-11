@@ -1,21 +1,35 @@
 .container {
-  max-width: 72rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  @apply flex flex-row w-screen h-screen;
+  margin: 9rem 5rem 5rem 5rem;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+.sidebar {
+  @apply p-2 w-2/6;
 }
 
-.headerImage {
-  width: 6rem;
-  height: 6rem;
+.main {
+  @apply p-2 w-4/6;
 }
 
-.headerHomeImage {
-  width: 4rem;
-  height: 4rem;
+.heading {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+}
+
+.lead {
+  font-size: 2.1rem;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -0.03rem;
+  margin: 0 0 7.5rem 0;
+}
+
+.contact {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
 }

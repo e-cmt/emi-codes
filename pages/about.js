@@ -1,11 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-import Alert from "../components/alert";
 import Layout from "../components/layout";
 
 export default function About() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>About</title>
       </Head>
@@ -15,6 +14,6 @@ export default function About() {
           <a>Back to home</a>
         </Link>
       </h2>
-    </Layout>
+    </>
   );
 }

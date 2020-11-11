@@ -1,12 +1,12 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import Image from "next/image";
 
-const name = "Emi";
-export const siteTitle = "Next.js Studio";
+const name = "I'm Emi";
+const lead = "artist & coder";
+export const siteTitle = "Emi's Portfolio - artist & coder";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,45 +14,25 @@ export default function Layout({ children, home }) {
         <meta name="description" content="Emi's Portfolio - artist & coder" />
         <meta property="og:image" content={`/favicon.png`} />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+      <div className={styles.sidebar}>
+        <h1 className={styles.heading}>I'm Emi</h1>
+        <h4 className={styles.lead}>artist & coder</h4>
+        <p className={styles.contact}>Keep in Contact</p>
+        <div className="flex justify-start space-x-6">
+          <div className="inline-block m-2 icon">
+            <Image src="/images/Email.png" width={23} height={16} />
+          </div>
+          <div className="inline-block m-2 icon">
+            <Image src="/images/Instagram.png" width={16} height={16} />
+          </div>
+          <div className="inline-block m-2 icon">
+            <Image src="/images/GitHub-Mark-32px.png" width={16} height={16} />
+          </div>
         </div>
-      )}
+      </div>
+
+      <main className={styles.main}>{children}</main>
     </div>
   );
 }
