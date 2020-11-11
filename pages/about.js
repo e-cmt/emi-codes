@@ -15,9 +15,6 @@ export default function About() {
           <a>Back to home</a>
         </Link>
       </h2>
-      <Alert type="success">
-        <div className="bg-pink-300">Hello</div>
-      </Alert>
     </Layout>
   );
 }
