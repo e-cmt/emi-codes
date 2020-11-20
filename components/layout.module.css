@@ -1,14 +1,14 @@
 .container {
   @apply flex flex-row w-screen h-screen;
-  margin: 9rem 5rem 5rem 5rem;
+  margin: 5rem;
 }
 
 .sidebar {
-  @apply p-2 w-2/6;
+  @apply p-1 w-2/6 mt-24;
 }
 
 .main {
-  @apply p-2 w-4/6;
+  @apply p-1 w-4/6;
 }
 
 .heading {

@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const name = "I'm Emi";
 const lead = "artist & coder";
-export const siteTitle = "Emi's Portfolio - artist & coder";
+export const siteTitle = "Emi's Portfolio";
 
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <meta name="description" content="Emi's Portfolio - artist & coder" />
+        <meta name="description" content="Emi's Portfolio" />
         <meta property="og:image" content={`/favicon.png`} />
         <meta name="og:title" content={siteTitle} />
       </Head>
