@@ -1,6 +1,6 @@
 .container {
   @apply flex flex-row w-screen h-screen;
-  margin: 5rem;
+  margin: 2rem 0 0 5rem;
 }
 
 .sidebar {
