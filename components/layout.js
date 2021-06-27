@@ -25,15 +25,15 @@ export default function Layout({ children }) {
             </a>
           </Link>
         </div>
-        <div className="pb-32">
-          <Link href="/projects/project-one">
+        <div className="pb-32 hidden sm:block">
+          <Link href="/projects/color-generator">
             <a>
-              <h6 className={styles.contact}>project one</h6>
+              <h6 className={styles.contact}>color generator</h6>
             </a>
           </Link>
           <Link href="/projects/project-two">
             <a>
-              <h6 className={styles.contact}>project two</h6>
+              <h6 className={styles.contact}>portfolio website</h6>
             </a>
           </Link>
           <Link href="/about">
@@ -46,7 +46,9 @@ export default function Layout({ children }) {
         <div className="flex justify-start space-x-6">
           <div className="inline-block icon">
             <Link href="mailto:emicodes@gmail.com">
-              <Image src="/images/web_icon.png" width={24} height={24} />
+              <a>
+                <Image src="/images/web_icon.png" width={24} height={24} />
+              </a>
             </Link>
           </div>
           {/* <div className="inline-block m-2 icon">
@@ -54,11 +56,13 @@ export default function Layout({ children }) {
           </div> */}
           <div className="inline-block icon">
             <Link href="https://github.com/e-cmt">
-              <Image
-                src="/images/GitHub-Mark-32px.png"
-                width={24}
-                height={24}
-              />
+              <a>
+                <Image
+                  src="/images/GitHub-Mark-32px.png"
+                  width={24}
+                  height={24}
+                />
+              </a>
             </Link>
           </div>
         </div>

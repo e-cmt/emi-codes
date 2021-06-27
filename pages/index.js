@@ -11,14 +11,14 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-wrap">
-        <Link href="/projects/project-one">
+        <Link href="/projects/color-generator">
           <a className="h-96 w-96  bg-yellow-100 flex flex-row justify-center items-center">
-            <p className="text-xl">project one</p>
+            <p className="text-xl">color generator</p>
           </a>
         </Link>
-        <Link href="/projects/project-two">
+        <Link href="/projects/portfolio-website">
           <a className="h-96 w-96 flex flex-row justify-center items-center bg-pink-100">
-            <p className="text-xl">project two</p>
+            <p className="text-xl">portfolio website</p>
           </a>
         </Link>
         <Link href="/about">
