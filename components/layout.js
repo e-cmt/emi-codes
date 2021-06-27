@@ -28,12 +28,12 @@ export default function Layout({ children }) {
         <div className="pb-32">
           <Link href="/projects/project-one">
             <a>
-              <h6 className={styles.contact}>house studio</h6>
+              <h6 className={styles.contact}>project one</h6>
             </a>
           </Link>
           <Link href="/projects/project-two">
             <a>
-              <h6 className={styles.contact}>portfolio website</h6>
+              <h6 className={styles.contact}>project two</h6>
             </a>
           </Link>
           <Link href="/about">
@@ -45,13 +45,21 @@ export default function Layout({ children }) {
         <p className={styles.contact}>Keep in Contact</p>
         <div className="flex justify-start space-x-6">
           <div className="inline-block icon">
-            <Image src="/images/web_icon.png" width={24} height={24} />
+            <Link href="mailto:emicodes@gmail.com">
+              <Image src="/images/web_icon.png" width={24} height={24} />
+            </Link>
           </div>
           {/* <div className="inline-block m-2 icon">
-            <Image src="/images/Instagram.png" width={16} height={16} />
+            <Image src="/images/Instagram.png" width={24} height={24} />
           </div> */}
           <div className="inline-block icon">
-            <Image src="/images/GitHub-Mark-32px.png" width={24} height={24} />
+            <Link href="https://github.com/e-cmt">
+              <Image
+                src="/images/GitHub-Mark-32px.png"
+                width={24}
+                height={24}
+              />
+            </Link>
           </div>
         </div>
       </div>

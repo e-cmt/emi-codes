@@ -11,12 +11,12 @@ export default function About() {
 
       <div>
         <img
-          className="w-5/6"
+          className="w-11/12"
           src="https://images.unsplash.com/photo-1603665185806-510f5376ce99?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
         ></img>
-        <div className="p-8">
-          <h1 className="text-3xl font-semibold	tracking-wide	pb-6">About</h1>
-          <p className="text-base w-4/5 pb-6">
+        <div className="w-11/12 p-6 pt-16 pb-16">
+          <h1 className="text-4xl font-bold	pb-12">ABOUT</h1>
+          <p className="text-base pb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

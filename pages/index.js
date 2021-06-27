@@ -13,12 +13,12 @@ export default function Home() {
       <div className="flex flex-wrap">
         <Link href="/projects/project-one">
           <a className="h-96 w-96  bg-yellow-100 flex flex-row justify-center items-center">
-            <p className="text-xl">house studio</p>
+            <p className="text-xl">project one</p>
           </a>
         </Link>
         <Link href="/projects/project-two">
           <a className="h-96 w-96 flex flex-row justify-center items-center bg-pink-100">
-            <p className="text-xl">portfolio website</p>
+            <p className="text-xl">project two</p>
           </a>
         </Link>
         <Link href="/about">
