@@ -1,14 +1,17 @@
 .container {
   @apply flex flex-row w-screen h-screen;
-  margin: 2rem 0 0 5rem;
+  /* margin: 2rem 0 0 5rem; */
 }
 
 .sidebar {
   @apply p-1 w-2/6 mt-24;
+  margin-top: 10rem;
+  margin-left: 5rem;
 }
 
 .main {
-  @apply p-1 w-4/6;
+  @apply p-1 w-4/6 h-screen;
+  margin: 4rem 0 2rem 0;
 }
 
 .heading {
@@ -19,7 +22,7 @@
 }
 
 .lead {
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 300;
   letter-spacing: -0.03rem;

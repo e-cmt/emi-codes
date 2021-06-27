@@ -26,11 +26,11 @@ export default function Home() {
             <p className="text-xl">about</p>
           </a>
         </Link>
-        <Link href="/projects/project-three">
+        {/* <Link href="/projects/project-three">
           <a className="h-96 w-96 flex flex-row justify-center items-center  bg-blue-100">
             <p className="text-xl">future</p>
           </a>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

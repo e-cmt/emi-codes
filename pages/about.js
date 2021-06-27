@@ -25,8 +25,8 @@ export default function About() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <Link href="/">
-            <a>BACK</a>
+          <Link className="text-base font-bold pb-4" href="/">
+            <a className="underline">back</a>
           </Link>
         </div>
       </div>
