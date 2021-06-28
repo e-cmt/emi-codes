@@ -1,38 +1,24 @@
 .container {
-  @apply flex flex-row w-screen h-screen;
-  /* margin: 2rem 0 0 5rem; */
+  @apply flex flex-row w-screen min-h-screen;
 }
 
 .sidebar {
-  @apply p-1 w-2/6 mt-24;
-  margin-top: 10rem;
-  margin-left: 5rem;
+  @apply p-1 w-2/6 mt-44;
 }
 
 .main {
-  @apply p-1 w-4/6 h-screen;
-  margin: 4rem 0 2rem 0;
+  @apply p-1 w-4/6 min-h-screen mt-16 mb-12 ml-8 sm:ml-12;
 }
 
 .heading {
-  font-size: 3.5rem;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
+  @apply text-6xl	font-extrabold	 tracking-tight;
+  line-height: 3rem;
 }
 
 .lead {
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 300;
-  letter-spacing: -0.03rem;
-  margin: 0 0 7.5rem 0;
+  @apply text-3xl	font-light tracking-tight leading-8 mb-28;
 }
 
 .contact {
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 300;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  @apply text-2xl	font-light tracking-tight leading-6 mt-4 mb-4;
 }

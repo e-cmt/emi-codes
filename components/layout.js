@@ -16,7 +16,9 @@ export default function Layout({ children }) {
         <meta property="og:image" content={`/favicon.png`} />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <div className={styles.sidebar}>
+      <div
+        className={[styles.sidebar, "ml-5", "sm:ml-10", "md:ml-20"].join(" ")}
+      >
         <div>
           <Link href="/">
             <a>
@@ -31,9 +33,14 @@ export default function Layout({ children }) {
               <h6 className={styles.contact}>color generator</h6>
             </a>
           </Link>
-          <Link href="/projects/project-two">
+          <Link href="/projects/portfolio-website">
             <a>
               <h6 className={styles.contact}>portfolio website</h6>
+            </a>
+          </Link>
+          <Link href="/projects/house-studio">
+            <a>
+              <h6 className={styles.contact}>house studio</h6>
             </a>
           </Link>
           <Link href="/about">
@@ -42,7 +49,7 @@ export default function Layout({ children }) {
             </a>
           </Link>
         </div>
-        <p className={styles.contact}>Keep in Contact</p>
+        <p className={styles.contact}>Keep in contact</p>
         <div className="flex justify-start space-x-6">
           <div className="inline-block icon">
             <Link href="mailto:emicodes@gmail.com">

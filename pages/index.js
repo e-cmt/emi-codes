@@ -10,27 +10,27 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap items-center justify-start">
         <Link href="/projects/color-generator">
-          <a className="h-96 w-96  bg-yellow-100 flex flex-row justify-center items-center">
+          <a className="h-56 w-56 sm:h-72 sm:w-72 xl:h-96 xl:w-96 bg-yellow-100 flex flex-row justify-center items-center">
             <p className="text-xl">color generator</p>
           </a>
         </Link>
         <Link href="/projects/portfolio-website">
-          <a className="h-96 w-96 flex flex-row justify-center items-center bg-pink-100">
+          <a className="h-56 w-56 sm:h-72 sm:w-72 xl:h-96 xl:w-96 flex flex-row justify-center items-center bg-pink-100">
             <p className="text-xl">portfolio website</p>
           </a>
         </Link>
         <Link href="/about">
-          <a className="h-96 w-96 flex flex-row justify-center items-center  bg-purple-100">
+          <a className="h-56 w-56 sm:h-72 sm:w-72 xl:h-96 xl:w-96 flex flex-row justify-center items-center  bg-purple-100">
             <p className="text-xl">about</p>
           </a>
         </Link>
-        {/* <Link href="/projects/project-three">
-          <a className="h-96 w-96 flex flex-row justify-center items-center  bg-blue-100">
-            <p className="text-xl">future</p>
+        <Link href="/projects/house-studio">
+          <a className="h-56 w-56 sm:h-72 sm:w-72 xl:h-96 xl:w-96 flex flex-row justify-center items-center  bg-blue-100">
+            <p className="text-xl">house studio</p>
           </a>
-        </Link> */}
+        </Link>
       </div>
     </>
   );
