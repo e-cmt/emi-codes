@@ -52,7 +52,7 @@ export default function Layout({ children }) {
         <p className={styles.contact}>Keep in contact</p>
         <div className="flex justify-start space-x-6">
           <div className="inline-block icon">
-            <Link href="mailto:emicodes@gmail.com">
+            <Link href="mailto:emicodes01@gmail.com">
               <a>
                 <Image src="/images/web_icon.png" width={24} height={24} />
               </a>
