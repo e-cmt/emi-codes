@@ -28,7 +28,7 @@ export default function Layout({ children }) {
             </a>
           </Link>
         </div>
-        <div className="pb-32 hidden sm:block">
+        <div className="mb-16 md:mb-20 xl:mb-36 hidden sm:block">
           <Link href="/projects/color-generator">
             <a>
               <h6 className={styles.links}>color generator</h6>

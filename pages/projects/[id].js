@@ -7,7 +7,7 @@ const One = {
   id: "color-generator",
   title: "COLOR GENERATOR",
   tags: ["HTML", "CSS", "JavaScript", "Git"],
-  text: "While trying to mix design and code, I created a color generator. The background color is randomly generated as you click. On the right side of the screen you can save up to 4 colors from the generator. In the upper left corner you can find an Easter Egg where you have your entire screen filled with smaller colored squares. On the rainbow page the colors of the squares will refresh just like the background of the homepage. The website also includes a custom circular cursor.",
+  text: "While trying to mix design and code, I created a color generator. The background color is randomly generated as you click. On the right side of the screen you can save up to 4 colors from the generator. In the upper left corner you can find an Easter Egg where you have your entire screen filled with smaller colored squares. On the rainbow page, the colors of the squares will refresh just like the background of the homepage. The website also includes a custom circular cursor.",
   hero: "/images/rainbow_hero.png",
   img: ["/images/colorful.png", "/images/rainbow.png"],
 };
@@ -25,7 +25,7 @@ const Three = {
   id: "house-studio",
   title: "HOUSE STUDIO",
   tags: ["AdobeXD", "HTML", "CSS", "Bootstrap", "Express", "EJS", "Git"],
-  text: "This was the first project designed and implemented from scratch. Working with technologies learned through a developement course I created a business website. Designed in AdobeXD, and then implemented a homepage, about, and contact page using Bootstrap, Express, and EJS.",
+  text: "This was the first project designed and implemented after finishing the Web Developer Bootcamp (Udemy). Working with technologies learned through the course I created a business website. Designed in AdobeXD, and then implemented a homepage, about, and contact page using Bootstrap, Express, and EJS.",
   hero: "/images/house_studio_hero.png",
   img: [
     "/images/house_studio_1.png",
@@ -65,7 +65,9 @@ function ProjectLayout({ id }) {
           ))}
         </div>
         <Link className="pb-4" href="/">
-          <a className="underline text-base font-medium">back</a>
+          <a className="underline text-base font-medium block sm:hidden">
+            back
+          </a>
         </Link>
       </div>
     </>
