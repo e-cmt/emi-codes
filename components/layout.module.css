@@ -11,7 +11,7 @@
 }
 
 .heading {
-  @apply text-6xl	font-extrabold	 tracking-tight;
+  @apply text-6xl	font-extrabold tracking-tight;
   line-height: 3rem;
 }
 

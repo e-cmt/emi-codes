@@ -16,6 +16,7 @@ export default function Layout({ children }) {
         <meta property="og:image" content={`/favicon.png`} />
         <meta name="og:title" content={siteTitle} />
       </Head>
+
       <div
         className={[styles.sidebar, "ml-5", "sm:ml-10", "md:ml-20"].join(" ")}
       >

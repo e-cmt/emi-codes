@@ -47,23 +47,25 @@ function ProjectLayout({ id }) {
       <img className="w-10/12" src={project.hero}></img>
       <div className="w-10/12 p-6 pt-16 pb-16">
         <div>
-          <h1 className="text-4xl font-bold	pb-12">{project.title}</h1>
+          <h1 className="text-4xl font-medium	tracking-widest	pb-12">
+            {project.title}
+          </h1>
         </div>
-        <h6 className="text-base font-bold pb-4">TECH</h6>
-        <ul className="flex flex-col sm:flex-row justify-between text-base pb-12">
+        <h6 className="text-base font-medium pb-4">TECH</h6>
+        <ul className="flex flex-col sm:flex-row justify-between text-base font-light pb-12">
           {project.tags.map((tag) => (
             <li className="text-sm pb-1">{tag}</li>
           ))}
         </ul>
-        <h6 className="text-base font-bold pb-4">ABOUT THE PROJECT</h6>
-        <p className="text-base pb-6">{project.text}</p>
+        <h6 className="text-base font-medium pb-4">ABOUT THE PROJECT</h6>
+        <p className="text-base font-light pb-6">{project.text}</p>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-start justify-start gap-8 pb-12">
           {project.img.map((img) => (
             <img className="flex w-11/12 md:w-8/12 lg:w-5/12" src={img}></img>
           ))}
         </div>
-        <Link className="text-base font-bold pb-4" href="/">
-          <a className="underline">back</a>
+        <Link className="pb-4" href="/">
+          <a className="underline text-base font-medium">back</a>
         </Link>
       </div>
     </>
