@@ -31,22 +31,22 @@ export default function Layout({ children }) {
         <div className="pb-32 hidden sm:block">
           <Link href="/projects/color-generator">
             <a>
-              <h6 className={styles.contact}>color generator</h6>
+              <h6 className={styles.links}>color generator</h6>
             </a>
           </Link>
           <Link href="/projects/portfolio-website">
             <a>
-              <h6 className={styles.contact}>portfolio website</h6>
+              <h6 className={styles.links}>portfolio website</h6>
             </a>
           </Link>
           <Link href="/projects/house-studio">
             <a>
-              <h6 className={styles.contact}>house studio</h6>
+              <h6 className={styles.links}>house studio</h6>
             </a>
           </Link>
           <Link href="/about">
             <a>
-              <h6 className={styles.contact}>about</h6>
+              <h6 className={styles.links}>about</h6>
             </a>
           </Link>
         </div>

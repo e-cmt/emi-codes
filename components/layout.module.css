@@ -22,3 +22,6 @@
 .contact {
   @apply text-2xl	font-light tracking-tight leading-6 mt-4 mb-4;
 }
+.links {
+  @apply text-2xl	font-light tracking-tight leading-6 mt-4 mb-4 transition duration-500 ease-in-out text-gray-500 hover:text-black transform hover:-translate-x-1 hover:scale-100;
+}
