@@ -9,9 +9,9 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <div className="w-11/12 flex flex-col lg:flex-row items-start md:items-center md:justify-items-center">
+      <div className="w-10/12 flex flex-col lg:flex-row items-start md:items-center md:justify-items-center">
         <img
-          className="w-8/12 sm:6/12 md:w-4/12 "
+          className="w-10/12 sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
           src="/images/profile_pic.png"
         ></img>
         <div className="w-11/12 lg:w-8/12 lg:p-10 pt-16">
