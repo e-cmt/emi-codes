@@ -21,13 +21,13 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <div className="w-10/12 flex flex-col lg:flex-row items-start lg:items-center lg:justify-items-center">
+      <div className="w-11/12 sm:w-10/12 flex flex-col lg:flex-row items-start lg:items-center lg:justify-items-center mb-8">
         <img
-          className="w-10/12 sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
+          className="w-full sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
           src="/images/profile_pic.png"
         ></img>
-        <div className="w-11/12 lg:w-8/12 lg:p-10 pt-16">
-          <h1 className="text-4xl font-medium	tracking-widest pb-8">
+        <div className="w-full lg:w-8/12 lg:p-10 pt-16">
+          <h1 className="text-2xl sm:text-4xl font-medium	tracking-widest pb-8">
             Hey there! I'm Emi.
           </h1>
           <p className="text-base font-light">
@@ -42,7 +42,7 @@ export default function About() {
         <h6 className="text-base font-medium pb-4">
           Technologies I've been working with:
         </h6>
-        <ul className="flex flex-col lg:flex-row justify-between text-base font-light pb-12">
+        <ul className="flex flex-row flex-wrap text-base font-light items-start justify-start gap-8 pb-12">
           <li className="h-6 w-6 pb-1">
             <FontAwesomeIcon icon={faHtml5} />
           </li>
@@ -71,7 +71,7 @@ export default function About() {
             <FontAwesomeIcon icon={faFigma} />
           </li>
         </ul>
-        <Link className="pb-4" href="/">
+        <Link className="pb-2" href="/">
           <a className="underline text-base font-medium block sm:hidden">
             back
           </a>
