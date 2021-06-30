@@ -1,6 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faNode,
+  faReact,
+  faFigma,
+  faGit,
+  faNpm,
+  faYarn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   return (
@@ -9,13 +21,13 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <div className="w-10/12 flex flex-col lg:flex-row items-start lg:items-center lg:justify-items-center">
+      <div className="w-11/12 sm:w-10/12 flex flex-col lg:flex-row items-start lg:items-center lg:justify-items-center mb-8">
         <img
-          className="w-10/12 sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
+          className="w-full sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
           src="/images/profile_pic.png"
         ></img>
-        <div className="w-11/12 lg:w-8/12 lg:p-10 pt-16">
-          <h1 className="text-4xl font-medium	tracking-widest pb-8">
+        <div className="w-full lg:w-8/12 lg:p-10 pt-16">
+          <h1 className="text-2xl sm:text-4xl font-medium	tracking-widest pb-8">
             Hey there! I'm Emi.
           </h1>
           <p className="text-base font-light">
@@ -30,15 +42,36 @@ export default function About() {
         <h6 className="text-base font-medium pb-4">
           Technologies I've been working with:
         </h6>
-        <ul className="flex flex-col lg:flex-row justify-between text-base font-light pb-12">
-          <li className="pb-1">HTML/CSS</li>
-          <li className="pb-1">JavaScript</li>
-          <li className="pb-1">TailwindCSS</li>
-          <li className="pb-1">React</li>
-          <li className="pb-1">Next.js</li>
-          <li className="pb-1">Node.js</li>
+        <ul className="flex flex-row flex-wrap text-base font-light items-start justify-start gap-8 pb-12">
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faHtml5} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faCss3Alt} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faJs} />
+          </li>
+          <li className="h-6 w-10 pb-1">
+            <FontAwesomeIcon icon={faNode} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faReact} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faGit} />
+          </li>
+          <li className="h-6 w-8 pb-1">
+            <FontAwesomeIcon icon={faNpm} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faYarn} />
+          </li>
+          <li className="h-6 w-5 pb-1">
+            <FontAwesomeIcon icon={faFigma} />
+          </li>
         </ul>
-        <Link className="pb-4" href="/">
+        <Link className="pb-2" href="/">
           <a className="underline text-base font-medium block sm:hidden">
             back
           </a>
