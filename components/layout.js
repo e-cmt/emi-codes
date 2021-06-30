@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const name = "I'm Emi";
 const lead = "designer and coder";
@@ -55,21 +58,21 @@ export default function Layout({ children }) {
           <div className="inline-block icon">
             <Link href="mailto:emicodes01@gmail.com">
               <a>
-                <Image src="/images/web_icon.png" width={24} height={24} />
+                <FontAwesomeIcon className="h-6 w-6" icon={faEnvelope} />
               </a>
             </Link>
           </div>
-          {/* <div className="inline-block m-2 icon">
-            <Image src="/images/Instagram.png" width={24} height={24} />
-          </div> */}
           <div className="inline-block icon">
             <Link href="https://github.com/e-cmt">
               <a>
-                <Image
-                  src="/images/GitHub-Mark-32px.png"
-                  width={24}
-                  height={24}
-                />
+                <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
+              </a>
+            </Link>
+          </div>
+          <div className="inline-block icon">
+            <Link href="https://linkedin.com/in/emi-t">
+              <a>
+                <FontAwesomeIcon className="h-6 w-5" icon={faLinkedinIn} />
               </a>
             </Link>
           </div>

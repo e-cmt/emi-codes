@@ -1,6 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faNode,
+  faReact,
+  faFigma,
+  faGit,
+  faNpm,
+  faYarn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   return (
@@ -31,12 +43,33 @@ export default function About() {
           Technologies I've been working with:
         </h6>
         <ul className="flex flex-col lg:flex-row justify-between text-base font-light pb-12">
-          <li className="pb-1">HTML/CSS</li>
-          <li className="pb-1">JavaScript</li>
-          <li className="pb-1">TailwindCSS</li>
-          <li className="pb-1">React</li>
-          <li className="pb-1">Next.js</li>
-          <li className="pb-1">Node.js</li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faHtml5} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faCss3Alt} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faJs} />
+          </li>
+          <li className="h-6 w-10 pb-1">
+            <FontAwesomeIcon icon={faNode} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faReact} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faGit} />
+          </li>
+          <li className="h-6 w-8 pb-1">
+            <FontAwesomeIcon icon={faNpm} />
+          </li>
+          <li className="h-6 w-6 pb-1">
+            <FontAwesomeIcon icon={faYarn} />
+          </li>
+          <li className="h-6 w-5 pb-1">
+            <FontAwesomeIcon icon={faFigma} />
+          </li>
         </ul>
         <Link className="pb-4" href="/">
           <a className="underline text-base font-medium block sm:hidden">
