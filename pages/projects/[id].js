@@ -10,6 +10,8 @@ const One = {
   text: "While trying to mix design and code, I created a color generator. The background color is randomly generated as you click. On the right side of the screen you can save up to 4 colors from the generator. In the upper left corner you can find an Easter Egg where you have your entire screen filled with smaller colored squares. On the rainbow page, the colors of the squares will refresh just like the background of the homepage. The website also includes a custom circular cursor.",
   hero: "/images/rainbow_hero.png",
   img: ["/images/colorful.png", "/images/rainbow.png"],
+  link: "../color-changer/index.html",
+  linktxt: "Check out the color generator!",
 };
 
 const Two = {
@@ -64,6 +66,14 @@ function ProjectLayout({ id }) {
             <img className="flex w-11/12 md:w-8/12 lg:w-5/12" src={img}></img>
           ))}
         </div>
+        {project.link && (
+          <Link className="" href={project.link}>
+            <a className="underline text-base font-medium hidden lg:block">
+              {project.linktxt}
+            </a>
+          </Link>
+        )}
+
         <Link className="" href="/">
           <a className="underline text-base font-medium block sm:hidden">
             back
