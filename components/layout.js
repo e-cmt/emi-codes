@@ -111,7 +111,7 @@ export default function Layout({ children }) {
       </div>
 
       <div
-        className={[styles.sidebar, "ml-5", "sm:ml-10", "md:ml-20"].join(" ")}
+        className={[styles.sidebar, "ml-6", "sm:ml-10", "lg:ml-16"].join(" ")}
       >
         <div>
           <Link href="/">
