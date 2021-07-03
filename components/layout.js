@@ -40,12 +40,8 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="menu-container">
-            <button
-              onClick={onClick}
-              className="menu-trigger"
-              className="h-6 w-6 text-black"
-            >
-              <FontAwesomeIcon icon={faBars} />
+            <button onClick={onClick} className="menu-trigger p-2">
+              <FontAwesomeIcon icon={faBars} className="h-6 w-6 text-black" />
             </button>
           </div>
         </div>
