@@ -1,0 +1,118 @@
+* {
+  cursor: none;
+}
+html,
+body {
+  min-width: 1024px;
+  height: 100vh;
+  background-color: black;
+  margin: 0 0 0 0;
+  transition: all 0.5s ease-out;
+}
+.name {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.cursor {
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-40%, -40%);
+  pointer-event: none;
+}
+
+.mouse-down {
+  border: 0.15em solid white;
+  background: white;
+}
+
+#right {
+  height: 100vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#column div {
+  height: 25vh;
+  border-left-color: white;
+  border-left-width: 0.25rem;
+  border-left-style: solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sq1,
+.sq2,
+.sq3 {
+  border-bottom-color: white;
+  border-bottom-width: 0.25rem;
+  border-bottom-style: solid;
+}
+
+.float {
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  left: 40%;
+  right: 40%;
+}
+h1 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 7em;
+  transition: all 1s ease-out;
+  margin: 0;
+}
+h2 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  display: inline;
+}
+h6 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1em;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+}
+.float-btn {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  display: inline;
+}
+#grid {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.square {
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  flex-grow: 1;
+}

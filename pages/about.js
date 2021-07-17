@@ -26,7 +26,7 @@ export default function About() {
           className="w-full sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
           src="/images/profile_pic.png"
         ></img>
-        <div className="w-full lg:w-8/12 lg:p-10 pt-16">
+        <div className="w-full lg:w-8/12 lg:pl-10 lg:pr-10 lg:pb-10 pt-16">
           <h1 className="text-2xl sm:text-4xl font-medium	tracking-widest pb-8">
             Hey there! I'm Emi.
           </h1>
