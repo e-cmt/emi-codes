@@ -7,7 +7,7 @@
 }
 
 .main {
-  @apply w-screen sm:w-5/6 min-h-screen mt-8 sm:mt-16 mb-12 sm:mx-16 mx-0 px-12 sm:px-0;
+  @apply w-screen sm:w-5/6 min-h-screen mt-8 sm:mt-16 mb-8 sm:mb-12 sm:mx-16 mx-0 px-12 sm:px-0;
 }
 
 .heading {

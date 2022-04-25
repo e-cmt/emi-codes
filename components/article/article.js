@@ -5,6 +5,7 @@ export default function Article({
   hero,
   title,
   tags,
+  date,
   body,
   img,
   link,
@@ -19,13 +20,14 @@ export default function Article({
             {title}
           </h1>
         </div>
-        <h6 className="text-base font-medium pb-2 sm:pb-4">TECH</h6>
+        <h6 className="text-base font-medium pb-1">TECH</h6>
         <ul className="flex flex-col sm:flex-row justify-between text-base font-light pb-8 sm:pb-12">
           {tags.map((tag) => (
             <li className="text-sm pb-1">{tag}</li>
           ))}
         </ul>
-        <h6 className="text-base font-medium pb-4">ABOUT THE PROJECT</h6>
+        <h6 className="text-base font-medium pb-1">ABOUT THE PROJECT</h6>
+        <p className="text-sm font-light pb-4">{date}</p>
         <p className="text-base font-light pb-6">{body}</p>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-start justify-start gap-4 md:gap-8 pb-12">
           {img.map((img) => (
