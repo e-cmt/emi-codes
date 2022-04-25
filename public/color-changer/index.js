@@ -4,6 +4,7 @@ const sqr1 = document.querySelector(".sq1");
 const sqr2 = document.querySelector(".sq2");
 const sqr3 = document.querySelector(".sq3");
 const sqr4 = document.querySelector(".sq4");
+const h1 = document.querySelector("h1");
 let color = "black";
 
 b.addEventListener("click", function () {

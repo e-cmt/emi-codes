@@ -1,9 +1,8 @@
 const b = document.body;
 const grid = document.querySelector("#grid");
 const c = document.querySelector(".cursor");
-let color = "black";
 
-for (i = 0; i <= 256; i++) {
+for (i = 0; i <= 2400; i++) {
   let div = document.createElement("div");
   grid.append(div);
   const red = Math.floor(Math.random() * 255);
@@ -15,8 +14,9 @@ for (i = 0; i <= 256; i++) {
 }
 
 b.addEventListener("click", function () {
-  for (i = 0; i <= 256; i++) {
+  for (i = 0; i <= 2400; i++) {
     let div = document.querySelector(`#grid div:nth-child(${i + 1})`);
+    console.log(div);
     const red = Math.floor(Math.random() * 255);
     const green = Math.floor(Math.random() * 255);
     const blue = Math.floor(Math.random() * 255);

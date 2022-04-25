@@ -11,11 +11,16 @@ body {
 }
 .name {
   height: 100vh;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.title {
+  height: 100%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  transition: all 0.5s ease-out;
 }
 
 .cursor {
@@ -48,42 +53,46 @@ body {
 
 #column div {
   height: 25vh;
-  border-left-color: white;
-  border-left-width: 0.25rem;
-  border-left-style: solid;
-
+  box-sizing: border-box;
+  border-color: white;
+  border-width: 0.5rem;
+  border-radius: 30%;
+  border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sq1,
-.sq2,
-.sq3 {
-  border-bottom-color: white;
-  border-bottom-width: 0.25rem;
-  border-bottom-style: solid;
-}
 
 .float {
   position: absolute;
-  top: 45%;
-  bottom: 45%;
-  left: 40%;
-  right: 40%;
+  text-align: center;
+  top: 40%;
+  left: 33%;
+  right: 33%;
 }
+
 h1 {
   color: white;
   font-family: Helvetica;
   font-size: 7em;
   transition: all 1s ease-out;
   margin: 0;
+  text-shadow: 8px 8px 20px #313131;
 }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
 h2 {
   color: white;
   font-family: Helvetica;
   font-size: 1.5em;
   display: inline;
 }
+
 h6 {
   color: white;
   font-family: Helvetica;
@@ -95,24 +104,30 @@ a {
   text-decoration: none;
   display: inline;
 }
+
 .float-btn {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  z-index: 10;
-  display: inline;
+  top: 0%;
+  left: 0%;
 }
+
+.link-bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
 #grid {
   height: 100vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .square {
-  height: 10vh;
-  width: 10vh;
+  height: 24px;
+  width: 24px;
   display: flex;
   flex-grow: 1;
 }

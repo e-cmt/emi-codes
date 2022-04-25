@@ -23,7 +23,9 @@ export default function Article({
         <h6 className="text-base font-medium pb-1">TECH</h6>
         <ul className="flex flex-col sm:flex-row justify-between text-base font-light pb-8 sm:pb-12">
           {tags.map((tag) => (
-            <li className="text-sm pb-1">{tag}</li>
+            <li key={tag.toString()} className="text-sm pb-1">
+              {tag}
+            </li>
           ))}
         </ul>
         <h6 className="text-base font-medium pb-1">ABOUT THE PROJECT</h6>
@@ -31,7 +33,11 @@ export default function Article({
         <p className="text-base font-light pb-6">{body}</p>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-start justify-start gap-4 md:gap-8 pb-12">
           {img.map((img) => (
-            <img className="flex w-11/12 md:w-8/12 lg:w-5/12" src={img}></img>
+            <img
+              key={img.toString()}
+              className="flex w-11/12 md:w-8/12 lg:w-5/12"
+              src={img}
+            ></img>
           ))}
         </div>
         {link && (
