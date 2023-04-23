@@ -41,18 +41,18 @@ export default function Article({
           ))}
         </div>
         {link && (
-          <Link className="" href={link}>
-            <a className="underline text-base font-medium hidden lg:block">
-              {linktxt}
-            </a>
+          <Link
+            className="underline text-base font-medium hidden lg:block"
+            href={link}
+          >
+            {linktxt}
           </Link>
         )}
 
-        <Link className="" href="/">
-          <a className="underline text-base font-medium block sm:hidden">
-            back
-          </a>
-        </Link>
+        <Link
+          className="underline text-base font-medium block sm:hidden"
+          href="/"
+        />
       </div>
     </>
   );

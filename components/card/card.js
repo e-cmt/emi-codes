@@ -24,10 +24,8 @@ export default function Card({ link, title, color }) {
 
   return (
     <>
-      <Link href={link}>
-        <a className={colorContainer}>
-          <p className={colorText}>{title}</p>
-        </a>
+      <Link className={colorContainer} href={link}>
+        <p className={colorText}>{title}</p>
       </Link>
     </>
   );

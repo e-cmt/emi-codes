@@ -71,10 +71,11 @@ export default function About() {
             <FontAwesomeIcon icon={faFigma} />
           </li>
         </ul>
-        <Link className="pb-2" href="/">
-          <a className="underline text-base font-medium block sm:hidden">
-            back
-          </a>
+        <Link
+          className="pb-2 underline text-base font-medium block sm:hidden"
+          href="/"
+        >
+          back
         </Link>
       </div>
     </>
