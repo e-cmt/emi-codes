@@ -36,7 +36,7 @@ export default function Layout({ children }) {
               <h6 className={styles.lead}>frontend developer</h6>
             </Link>
           </div>
-          <div className="menu-container">
+          <div className="menu-container relative">
             <button onClick={onClick} className="menu-trigger p-2">
               <FontAwesomeIcon icon={faBars} className="h-6 w-6 text-black" />
             </button>
@@ -44,47 +44,41 @@ export default function Layout({ children }) {
         </div>
         <nav
           ref={dropdownRef}
-          className={[
-            `menu ${isActive ? 'active' : 'hidden'}`,
-            'delay-200',
-            'duration-200',
-          ].join(' ')}
+          className={`${
+            isActive ? 'active' : 'hidden'
+          } absolute w-full bg-white shadow-2xl delay-200 duration-200`}
         >
           <ul className="flex flex-col mt-4">
             <li>
-              <Link
-                href="/about"
-                onClick={onClick}
-                className="flex justify-center transition-opacity"
-              >
-                <h6 className={styles.links}>about</h6>
+              <Link href="/about" onClick={onClick} className={styles.links}>
+                about
               </Link>
             </li>
             <li>
               <Link
                 href="/projects/color-generator"
                 onClick={onClick}
-                className="flex justify-center transition-opacity"
+                className={styles.links}
               >
-                <h6 className={styles.links}>color generator</h6>
+                color generator
               </Link>
             </li>
             <li>
               <Link
                 href="/projects/portfolio-website"
                 onClick={onClick}
-                className="flex justify-center transition-opacity"
+                className={styles.links}
               >
-                <h6 className={styles.links}>portfolio website</h6>
+                portfolio website
               </Link>
             </li>
             <li>
               <Link
                 href="/projects/house-studio"
                 onClick={onClick}
-                className="flex justify-center transition-opacity"
+                className={styles.links}
               >
-                <h6 className={styles.links}>house studio</h6>
+                house studio
               </Link>
             </li>
           </ul>
@@ -102,17 +96,18 @@ export default function Layout({ children }) {
         </div>
 
         <div className="mb-16 md:mb-20 xl:mb-36 hidden sm:block">
-          <Link href="/about">
-            <h6 className={styles.links}>about</h6>
+          <Link href="/about" className={styles.links}>
+            about
+            <h6></h6>
           </Link>
-          <Link href="/projects/color-generator">
-            <h6 className={styles.links}>color generator</h6>
+          <Link href="/projects/color-generator" className={styles.links}>
+            color generator
           </Link>
-          <Link href="/projects/portfolio-website">
-            <h6 className={styles.links}>portfolio website</h6>
+          <Link href="/projects/portfolio-website" className={styles.links}>
+            portfolio website
           </Link>
-          <Link href="/projects/house-studio">
-            <h6 className={styles.links}>house studio</h6>
+          <Link href="/projects/house-studio" className={styles.links}>
+            house studio
           </Link>
         </div>
         <p className={styles.contact}>Keep in contact</p>
@@ -145,11 +140,6 @@ export default function Layout({ children }) {
           Keep in contact
         </p>
         <div className="flex justify-center space-x-6">
-          <div className="inline-block icon">
-            <Link href="mailto:emicodes01@gmail.com">
-              <FontAwesomeIcon className="h-6 w-6" icon={faEnvelope} />
-            </Link>
-          </div>
           <div className="inline-block icon">
             <Link href="https://github.com/e-cmt">
               <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
