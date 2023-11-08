@@ -20,24 +20,20 @@ export default function About() {
       </Head>
 
       <div className="w-11/12 sm:w-10/12 flex flex-col lg:flex-row items-start lg:items-center lg:justify-items-center mb-8">
-        <img
-          className="w-full sm:6/12 md:w-5/12 xl:w-4/12 2xl:w-3/12"
-          src="/images/profile_pic.png"
-        ></img>
-        <div className="w-full lg:w-8/12 lg:pl-10 lg:pr-10 lg:pb-10 pt-16">
+        <div className="w-full lg:pb-6 pt-16">
           <h1 className="text-2xl sm:text-4xl font-medium	tracking-widest pb-8">
             Hey there! I'm Emi.
           </h1>
           <p className="text-base font-light pb-2">
-            I'm a frontend developer. After falling in love with coding in high
-            school, I took a small detour until I started working in an IT
-            company. After learning on my own for a while and creating my own
-            projects, I started working as a junior front end developer.
+            I'm a frontend developer with 2+ years of proven experience. Focused
+            on writing reusable and scalable code as an independent team member.
+            Proactive in removing blockers and creating long lasting solutions
+            for clients.
           </p>
           <p className="text-base font-light">
-            Almost a year later, I am working with React and Next.JS to create
-            functional code for clients. I use Storybook, unit tests with React
-            Testing Library and Jest to prevent issues.
+            Currently working with React and Next.JS to create functional code
+            for clients. I use Storybook, unit tests with React Testing Library
+            and Jest to prevent issues.
           </p>
         </div>
       </div>
@@ -47,28 +43,28 @@ export default function About() {
         </h6>
         <ul className="flex flex-row flex-wrap text-base font-light items-start justify-start gap-8 pb-12">
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faHtml5} />
+            <FontAwesomeIcon icon={faHtml5} title="HTML5" />
           </li>
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faCss3Alt} />
+            <FontAwesomeIcon icon={faCss3Alt} title="CSS3" />
           </li>
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faJs} />
+            <FontAwesomeIcon icon={faJs} title="JavaScript" />
           </li>
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faReact} />
+            <FontAwesomeIcon icon={faReact} title="React.JS" />
           </li>
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faGit} />
+            <FontAwesomeIcon icon={faGit} title="git" />
           </li>
           <li className="h-6 w-8 pb-1">
-            <FontAwesomeIcon icon={faNpm} />
+            <FontAwesomeIcon icon={faNpm} title="npm" />
           </li>
           <li className="h-6 w-6 pb-1">
-            <FontAwesomeIcon icon={faYarn} />
+            <FontAwesomeIcon icon={faYarn} title="yarn" />
           </li>
           <li className="h-6 w-5 pb-1">
-            <FontAwesomeIcon icon={faFigma} />
+            <FontAwesomeIcon icon={faFigma} title="Figma" />
           </li>
         </ul>
         <Link

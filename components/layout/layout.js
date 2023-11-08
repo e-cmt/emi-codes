@@ -54,9 +54,7 @@ export default function Layout({ children }) {
             <li>
               <Link
                 href="/about"
-                onClick={() => {
-                  setIsActive(false);
-                }}
+                onClick={onClick}
                 className="flex justify-center transition-opacity"
               >
                 <h6 className={styles.links}>about</h6>
@@ -65,9 +63,7 @@ export default function Layout({ children }) {
             <li>
               <Link
                 href="/projects/color-generator"
-                onClick={() => {
-                  setIsActive(false);
-                }}
+                onClick={onClick}
                 className="flex justify-center transition-opacity"
               >
                 <h6 className={styles.links}>color generator</h6>
@@ -76,9 +72,7 @@ export default function Layout({ children }) {
             <li>
               <Link
                 href="/projects/portfolio-website"
-                onClick={() => {
-                  setIsActive(false);
-                }}
+                onClick={onClick}
                 className="flex justify-center transition-opacity"
               >
                 <h6 className={styles.links}>portfolio website</h6>
@@ -87,9 +81,7 @@ export default function Layout({ children }) {
             <li>
               <Link
                 href="/projects/house-studio"
-                onClick={() => {
-                  setIsActive(false);
-                }}
+                onClick={onClick}
                 className="flex justify-center transition-opacity"
               >
                 <h6 className={styles.links}>house studio</h6>
@@ -125,11 +117,6 @@ export default function Layout({ children }) {
         </div>
         <p className={styles.contact}>Keep in contact</p>
         <div className="flex justify-start space-x-6">
-          <div className="inline-block icon">
-            <Link href="mailto:emicodes01@gmail.com">
-              <FontAwesomeIcon className="h-6 w-6" icon={faEnvelope} />
-            </Link>
-          </div>
           <div className="inline-block icon">
             <Link href="https://github.com/e-cmt">
               <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
