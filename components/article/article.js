@@ -23,7 +23,7 @@ export default function Article({
         <h6 className="text-base font-medium pb-1">TECH</h6>
         <ul className="flex flex-col sm:flex-row justify-between text-base font-light pb-8 sm:pb-12">
           {tags.map((tag) => (
-            <li key={tag.toString()} className="text-sm pb-1">
+            <li key={tag.toString()} className="text-sm pr-1 pb-1">
               {tag}
             </li>
           ))}
