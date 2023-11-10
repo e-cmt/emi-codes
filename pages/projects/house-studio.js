@@ -12,7 +12,7 @@ export default function ColorGenerator() {
       <Article
         hero="/images/house_studio_hero.png"
         title="HOUSE STUDIO"
-        tags={['AdobeXD', 'HTML', 'CSS', 'Bootstrap', 'Express', 'EJS', 'Git']}
+        tags={['AdobeXD', 'HTML', 'CSS', 'Bootstrap', 'Express', 'EJS']}
         date="oct 2020"
         body="This was the first project designed and implemented after finishing the Web Developer Bootcamp (Udemy). Working with technologies learned through the course I created a business website. Designed in AdobeXD, and then implemented a homepage, about, and contact page using Bootstrap, Express, and EJS."
         img={[
