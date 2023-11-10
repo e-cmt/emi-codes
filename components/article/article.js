@@ -40,19 +40,14 @@ export default function Article({
             ></img>
           ))}
         </div>
-        {link && (
+        {link ? (
           <Link
             className="underline text-base font-medium hidden lg:block"
             href={link}
           >
             {linktxt}
           </Link>
-        )}
-
-        <Link
-          className="underline text-base font-medium block sm:hidden"
-          href="/"
-        />
+        ) : null}
       </div>
     </>
   );
