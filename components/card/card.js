@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 export default function Card({ link, title, color }) {
   const colorContainer = classNames(
-    'h-64 w-full lg:h-72 lg:w-72 xl:h-96 xl:w-96 flex flex-row justify-center items-center grow',
+    'h-64 w-full lg:h-72 lg:w-72 xl:h-96 xl:w-96 flex flex-row justify-center items-center',
     {
       'bg-yellow-100': color === 'yellow',
       'bg-pink-100': color === 'pink',
