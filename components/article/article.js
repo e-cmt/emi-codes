@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import Link from 'next/link';
-
 export default function Article({ hero, title, tags, date, body, img }) {
   return (
     <>
@@ -20,17 +17,17 @@ export default function Article({ hero, title, tags, date, body, img }) {
         <h6 className="text-base font-medium pb-1">ABOUT THE PROJECT</h6>
         <p className="text-sm font-light pb-4">{date}</p>
         <p className="text-base font-light">{body}</p>
-        {img
-          ? img.map((img) => (
-              <div className="flex flex-col sm:flex-row sm:flex-wrap items-start justify-start gap-4 md:gap-8 pt-6 pb-12">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-start justify-start gap-4 md:gap-8 pt-6 pb-12">
+          {img
+            ? img.map((img) => (
                 <img
                   key={img.toString()}
                   className="flex w-11/12 md:w-8/12 lg:w-5/12"
                   src={img}
                 ></img>
-              </div>
-            ))
-          : null}
+              ))
+            : null}
+        </div>
       </div>
     </>
   );
