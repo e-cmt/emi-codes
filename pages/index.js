@@ -11,8 +11,8 @@ export default function Home() {
 
       <div className="flex flex-wrap items-center justify-start">
         <Card
-          link="/projects/color-generator"
-          title="color generator"
+          link="/projects/client-projects"
+          title="client projects"
           color="yellow"
         />
         <Card link="/about" title="about" color="purple" />
@@ -21,7 +21,16 @@ export default function Home() {
           title="portfolio website"
           color="pink"
         />
-        <Card link="/projects/house-studio" title="house studio" color="blue" />
+        <Card
+          link="/projects/color-generator"
+          title="color generator"
+          color="blue"
+        />
+        <Card
+          link="/projects/house-studio"
+          title="house studio"
+          color="yellow"
+        />
       </div>
     </>
   );

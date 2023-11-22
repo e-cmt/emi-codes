@@ -3,7 +3,7 @@ import styles from './layout.module.css';
 import Link from 'next/link';
 import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {
   faDribbble,
   faGithub,
@@ -56,11 +56,11 @@ export default function Layout({ children }) {
             </li>
             <li>
               <Link
-                href="/projects/color-generator"
+                href="/projects/client-projects"
                 onClick={onClick}
                 className={styles.links}
               >
-                color generator
+                client projects
               </Link>
             </li>
             <li>
@@ -70,6 +70,15 @@ export default function Layout({ children }) {
                 className={styles.links}
               >
                 portfolio website
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/color-generator"
+                onClick={onClick}
+                className={styles.links}
+              >
+                color generator
               </Link>
             </li>
             <li>
@@ -100,11 +109,14 @@ export default function Layout({ children }) {
             about
             <h6></h6>
           </Link>
-          <Link href="/projects/color-generator" className={styles.links}>
-            color generator
+          <Link href="/projects/client-projects" className={styles.links}>
+            client projects
           </Link>
           <Link href="/projects/portfolio-website" className={styles.links}>
             portfolio website
+          </Link>
+          <Link href="/projects/color-generator" className={styles.links}>
+            color generator
           </Link>
           <Link href="/projects/house-studio" className={styles.links}>
             house studio
