@@ -1,3 +1,3 @@
-## Hi
+### 👋 Hello there
 
-This is my portoflio.
+I'm Emi and this is my portoflio.
