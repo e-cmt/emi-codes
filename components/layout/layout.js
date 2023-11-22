@@ -118,11 +118,6 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="inline-block icon">
-            <Link href="https://dribbble.com/emi_t">
-              <FontAwesomeIcon className="h-6 w-6" icon={faDribbble} />
-            </Link>
-          </div>
-          <div className="inline-block icon">
             <Link href="https://linkedin.com/in/emi-t">
               <FontAwesomeIcon className="h-6 w-5" icon={faLinkedinIn} />
             </Link>
@@ -143,11 +138,6 @@ export default function Layout({ children }) {
           <div className="inline-block icon">
             <Link href="https://github.com/e-cmt">
               <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
-            </Link>
-          </div>
-          <div className="inline-block icon">
-            <Link href="https://dribbble.com/emi_t">
-              <FontAwesomeIcon className="h-6 w-6" icon={faDribbble} />
             </Link>
           </div>
           <div className="inline-block icon">
