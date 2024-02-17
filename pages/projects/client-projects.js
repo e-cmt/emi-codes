@@ -38,7 +38,7 @@ export default function ClientProjects() {
       <Article
         title="Payments Service"
         tags={['Figma', 'React', 'Next.JS', 'CSS', 'Jira']}
-        date="may 2023 - present"
+        date="may 2023 - dec 2023"
         body="Implemented payments into a website using a third-party service. The front-end was developed with React and deployed with Next.JS."
       />
     </>
