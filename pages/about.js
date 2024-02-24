@@ -25,7 +25,7 @@ export default function About() {
             Hey there! I'm Emi.
           </h1>
           <p className="text-base font-light pb-2">
-            I'm a frontend developer with 2+ years of proven experience. Focused
+            I'm a software developer with 2+ years of proven experience. Focused
             on writing reusable and scalable code as an independent team member.
             Proactive in removing blockers and creating long lasting solutions
             for clients.

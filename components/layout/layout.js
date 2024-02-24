@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const name = "I'm Emi";
-const lead = 'frontend developer';
+const lead = 'software developer';
 export const siteTitle = "Emi's Portfolio";
 
 export default function Layout({ children }) {
@@ -33,7 +33,7 @@ export default function Layout({ children }) {
           <div>
             <Link href="/">
               <h1 className={styles.heading}>I'm Emi</h1>
-              <h6 className={styles.lead}>frontend developer</h6>
+              <h6 className={styles.lead}>software developer</h6>
             </Link>
           </div>
           <div className="menu-container relative">
@@ -100,7 +100,7 @@ export default function Layout({ children }) {
         <div>
           <Link href="/">
             <h1 className={styles.heading}>I'm Emi</h1>
-            <h6 className={styles.lead}> frontend developer</h6>
+            <h6 className={styles.lead}>software developer</h6>
           </Link>
         </div>
 
