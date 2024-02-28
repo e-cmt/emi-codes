@@ -28,8 +28,8 @@ export default function Layout({ children }) {
         <meta name="og:title" content={siteTitle} />
       </Head>
 
-      <div className="w-full sm:hidden">
-        <div className="flex flex-row w-10/12 justify-between mt-16 ml-8 mr-8">
+      <div className="w-full bg-white sm:hidden sticky top-0 z-10">
+        <div className="flex flex-row w-10/12 justify-between mx-10 mt-10 mb-4">
           <div>
             <Link href="/">
               <h1 className={styles.heading}>I'm Emi</h1>
