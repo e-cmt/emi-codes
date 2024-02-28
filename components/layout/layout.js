@@ -46,7 +46,7 @@ export default function Layout({ children }) {
           ref={dropdownRef}
           className={`${
             isActive ? 'active' : 'hidden'
-          } absolute w-full bg-white shadow-2xl delay-200 duration-200`}
+          } absolute w-full bg-white shadow-2xl delay-200 duration-200 z-10`}
         >
           <ul className="flex flex-col mt-4">
             <li>
