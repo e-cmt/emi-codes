@@ -155,7 +155,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="inline-block icon">
-            <Link href="https://linkedin.com/in/emi-t">
+            <Link href="https://linkedin.com/in/emi-mc">
               <FontAwesomeIcon className="h-6 w-5" icon={faLinkedinIn} />
             </Link>
           </div>
